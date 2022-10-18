@@ -1,0 +1,20 @@
+{
+    "_joining": [
+        "StartEnd",
+        "Начало",
+        "InOut",
+        "x",
+        "InOut",
+        "x",
+        "Block",
+        "y=x*2",
+        "Block",
+        "y=x*2",
+        "InOut",
+        "y",
+        "InOut",
+        "y",
+        "StartEnd",
+        "Конец"
+    ]
+}
