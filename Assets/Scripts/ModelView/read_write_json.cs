@@ -23,13 +23,16 @@ public class read_write_json : MonoBehaviour//Чтение и запись в js
 
     private void Load_work()
     {
-        _work_txt.text = "Загрузил";
-        name_work = "MyBlock";
+        name_work = "Задание_1";
+        string PathJson = Path.Combine(Application.dataPath, $@"{name_work}.json");
+        string json = File.ReadAllText(PathJson);
+        Block_struct _blockStruct = JsonUtility.FromJson<Block_struct>(json);
+        _work_txt.text = _blockStruct._text_z;
     }
 
     public void Save_json()
     {
-        string PathJson = Path.Combine(Application.dataPath, $"{name_work}.json");
+        string PathJson = Path.Combine(Application.dataPath, $@"{name_work}.json");
         foreach (var VARIABLE in Singleton._linkedList)
         {
             Debug.Log("JSON TAG: "+VARIABLE.gameObject.tag);
@@ -39,7 +42,8 @@ public class read_write_json : MonoBehaviour//Чтение и запись в js
         }
         Block_struct _blockStruct = new Block_struct()
         {
-            _joining = this._text_s
+            _joining = this._text_s,
+            _text_z = this._work_txt.text
         };
         string json = JsonUtility.ToJson(_blockStruct, true);
         File.WriteAllText(PathJson,json);
@@ -47,7 +51,7 @@ public class read_write_json : MonoBehaviour//Чтение и запись в js
 
     public void Read_json()
     {
-        string PathJson = Path.Combine(Application.dataPath, $"{name_work}.json");
+        string PathJson = Path.Combine(Application.dataPath, $@"{name_work}.json");
         string json = File.ReadAllText(PathJson);
         Block_struct _blockStruct = JsonUtility.FromJson<Block_struct>(json);
         this._text_s = _blockStruct._joining;
@@ -80,5 +84,6 @@ public class read_write_json : MonoBehaviour//Чтение и запись в js
 [System.Serializable]
 public struct Block_struct
 {
+    public string _text_z;
     public List<string> _joining;
 }

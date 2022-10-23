@@ -1,0 +1,21 @@
+{
+    "_text_z": "Задание текст",
+    "_joining": [
+        "StartEnd",
+        "Начало",
+        "InOut",
+        "а",
+        "InOut",
+        "а",
+        "Block",
+        "б = а * 2",
+        "Block",
+        "б = а * 2",
+        "InOut",
+        "б",
+        "InOut",
+        "б",
+        "StartEnd",
+        "Конец"
+    ]
+}
