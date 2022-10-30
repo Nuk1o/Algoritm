@@ -1,13 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.Experimental.GlobalIllumination;
-
 public class Block_point_on_off : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] GameObject _point_up, _point_down, _point_left, _point_right;
-
     public void OnPointerEnter(PointerEventData eventData)
     {
         _point_up.SetActive(true);
@@ -15,7 +10,6 @@ public class Block_point_on_off : MonoBehaviour, IPointerEnterHandler, IPointerE
         _point_left.SetActive(true);
         _point_right.SetActive(true);
     }
-
     public void OnPointerExit(PointerEventData eventData)
     {
         _point_up.SetActive(false);
@@ -23,7 +17,6 @@ public class Block_point_on_off : MonoBehaviour, IPointerEnterHandler, IPointerE
         _point_left.SetActive(false);
         _point_right.SetActive(false);
     }
-
     void Start()
     {
         _point_up.SetActive(false);
@@ -31,6 +24,4 @@ public class Block_point_on_off : MonoBehaviour, IPointerEnterHandler, IPointerE
         _point_left.SetActive(false);
         _point_right.SetActive(false);
     }
-
-    
 }

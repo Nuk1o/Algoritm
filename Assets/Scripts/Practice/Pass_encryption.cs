@@ -1,9 +1,9 @@
 using System.IO;
 using System.Security.Cryptography;
-public static class MV_pass_encryption //Шифрование пароля
+public static class Pass_encryption //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 {
-    private const int KEYSIZE = 256;//Размер ключа
-    public static byte[] Encrypt(byte[] data, string password, byte[] salt, byte[] iv)//Шифрование
+    private const int KEYSIZE = 256;//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+    public static byte[] Encrypt(byte[] data, string password, byte[] salt, byte[] iv)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         using var rij = new RijndaelManaged()
         {

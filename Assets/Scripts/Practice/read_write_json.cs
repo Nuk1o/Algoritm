@@ -1,11 +1,10 @@
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class read_write_json : MonoBehaviour//Чтение и запись в json файл
+public class Read_write_json : MonoBehaviour//Чтение и запись в json файл
 {
     [SerializeField] private Text _work_txt;
     [SerializeField] private Button _btn_prack;

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class MV_text_input : MonoBehaviour, IPointerDownHandler
+public class Text_input : MonoBehaviour, IPointerDownHandler
 {
     [Header("Текст в блок")]
     [SerializeField] private GameObject _go_txt;

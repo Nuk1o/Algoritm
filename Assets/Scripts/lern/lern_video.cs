@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Video;
 
-public class lern_video : MonoBehaviour 
+public class Lern_video : MonoBehaviour 
 {
     //Скрипт для включения видео
     [SerializeField] VideoPlayer _player;

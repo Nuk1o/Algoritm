@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
 
-public class video_player_controll : MonoBehaviour
+public class Video_player_controll : MonoBehaviour
 {
     //Скрипт для управление видеороликом
     [SerializeField] VideoPlayer _player;    

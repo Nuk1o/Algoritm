@@ -2,7 +2,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class View_table_users : MonoBehaviour //Запись пользователей в таблицу
+public class Table_users : MonoBehaviour //Запись пользователей в таблицу
 {
     [SerializeField] GameObject _place;
     [SerializeField] Text _login;

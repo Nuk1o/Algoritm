@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UniRx;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using list_n;
 
 public class Mech : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDragHandler, IEndDragHandler
 {

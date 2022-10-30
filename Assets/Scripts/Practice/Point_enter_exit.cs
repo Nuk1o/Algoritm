@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class MV_point_enter_exit : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class Point_enter_exit : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [Header("Точки")]
     [SerializeField] private GameObject point_top;

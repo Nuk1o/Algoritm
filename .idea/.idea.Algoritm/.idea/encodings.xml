@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise">
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/Lern/Lern_video.cs" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/Lern/Video_player_controll.cs" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/Assets/Scripts/Line_scripts/Block_line_draw.cs" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/Mechs/List_save_control.cs" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/Assets/Scripts/Mechs/Mech.cs" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/Assets/Scripts/Mechs/list_save_control.cs" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/Other/Exit_app.cs" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/Other/Login_view.cs" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/Other/Registration.cs" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/Other/Table_users.cs" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/Other/View_exit_app.cs" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/Other/View_login_view.cs" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/Other/View_registration.cs" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Assets/Scripts/Other/View_table_users.cs" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/Assets/Scripts/View/View_login_view.cs" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/Assets/Scripts/View/View_registration.cs" charset="windows-1251" />
   </component>
