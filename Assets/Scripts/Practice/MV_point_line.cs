@@ -18,7 +18,7 @@ public class MV_point_line : MonoBehaviour, IPointerDownHandler
         {
             Debug.Log("Рисовалка вкл");
             lineRenderer = new GameObject("Line").AddComponent<LineRenderer>();
-            lineRenderer.AddComponent<MV_del_line>();
+            lineRenderer.AddComponent<Del_line>();
             lineRenderer.AddComponent<BoxCollider2D>();
             
             lineRenderer.startColor = Color.black;

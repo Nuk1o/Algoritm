@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MV_del_line : MonoBehaviour
+public class Del_line : MonoBehaviour
 {
     //Удаление линии
     private Rigidbody2D rb2D;

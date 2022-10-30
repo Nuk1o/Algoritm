@@ -134,7 +134,7 @@ public class Block_line_draw : MonoBehaviour, IPointerDownHandler
                 lineRenderer.SetPosition(1, new Vector3(Singleton_points._pos_points[1].x, Singleton_points._pos_points[1].y, 0));
             }
 
-            lineRenderer.AddComponent<MV_del_line>();
+            lineRenderer.AddComponent<Del_line>();
             lineRenderer.AddComponent<BoxCollider2D>();
 
 
