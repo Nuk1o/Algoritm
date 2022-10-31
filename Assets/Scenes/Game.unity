@@ -14342,9 +14342,6 @@ MonoBehaviour:
   _btn_prack: {fileID: 3866682735114901791}
   _Result_go: {fileID: 1092186830473404120}
   _result_txt: {fileID: 1036203260}
-  _text_s: []
-  _equal_s: []
-  name_work: 
 --- !u!114 &7571790090361347133
 MonoBehaviour:
   m_ObjectHideFlags: 0
