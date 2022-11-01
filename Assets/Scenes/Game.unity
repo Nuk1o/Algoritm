@@ -10346,7 +10346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &1730298539383730430
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15501,7 +15501,6 @@ GameObject:
   - component: {fileID: 3600153478452167655}
   - component: {fileID: 3970941937254162535}
   - component: {fileID: 8991313853519777478}
-  - component: {fileID: 8991313853519777477}
   m_Layer: 5
   m_Name: Panel_centr
   m_TagString: Untagged
@@ -15509,18 +15508,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8991313853519777477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8991313853519777476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c1912cb0a8563948b337f410493fc44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8991313853519777478
 MonoBehaviour:
   m_ObjectHideFlags: 0

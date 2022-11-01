@@ -12,7 +12,7 @@ public class Singleton_points : MonoBehaviour
       {
          if (instance == null)
          {
-            instance = this;
+            instance = this; 
             DontDestroyOnLoad(this.gameObject);
             return;
          }

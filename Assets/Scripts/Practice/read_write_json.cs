@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class Read_write_json : MonoBehaviour//Чтение и запись в json файл
 {
@@ -15,6 +17,22 @@ public class Read_write_json : MonoBehaviour//Чтение и запись в js
     private List<string> _equal_s = new List<string>();
     private string name_work;
 
+    private void Start()
+    {
+        int val = Random.Range(0, 2);
+        Debug.Log(val);
+        switch (val)
+        {
+            case 0:
+                name_work = "Задание_1";
+                break;
+            case 1:
+                name_work = "Задание_2";
+                break;
+        }
+        Debug.Log(name_work);
+    }
+
     private void Update()
     {
         _btn_prack.onClick.AddListener(delegate { Load_work(); });
@@ -22,7 +40,6 @@ public class Read_write_json : MonoBehaviour//Чтение и запись в js
 
     private void Load_work()
     {
-        name_work = "Задание_1";
         string PathJson = Path.Combine(Application.dataPath, $@"{name_work}.json");
         string json = File.ReadAllText(PathJson);
         Block_struct _blockStruct = JsonUtility.FromJson<Block_struct>(json);
