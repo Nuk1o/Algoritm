@@ -1,10 +1,10 @@
-using UnityEngine;
 using MySql.Data.MySqlClient;
+using UnityEngine;
 using System;
 
 public class BD_base : MonoBehaviour
 {
-    public string login_user(string password)//Р’С…РѕРґ
+    public string login_user(string password)//Вход
     {
         try
         {
@@ -16,17 +16,19 @@ public class BD_base : MonoBehaviour
             conn.Open();
             string role_bd = cmd.ExecuteScalar().ToString();
             conn.Close();
+            Debug.Log(role_bd);
             return role_bd;
         }
-        catch
+        catch(Exception e)
         {
-            Debug.Log("РћС€РёР±РєР° РІС…РѕРґР°");
+            Debug.Log(e);
+            Debug.Log("Ошибка входа");
         }
         return null;
     }
 
 
-    public string login_usr(int id)//Р›РѕРіРёРЅ
+    public string login_usr(int id)//Логин
     {
         try
         {
@@ -42,12 +44,12 @@ public class BD_base : MonoBehaviour
         }
         catch
         {
-            Debug.Log("РћС€РёР±РєР°");
+            Debug.Log("Ошибка");
         }
         return null;
     }
 
-    public string role_usr(int id)//Р РѕР»СЊ
+    public string role_usr(int id)//Роль
     {
         try
         {
@@ -63,12 +65,12 @@ public class BD_base : MonoBehaviour
         }
         catch
         {
-            Debug.Log("РћС€РёР±РєР°");
+            Debug.Log("Ошибка");
         }
         return null;
     }
 
-    public int count_a_users()//РљРѕР»-РІРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
+    public int count_a_users()//Кол-во пользователей
     {
         try
         {
@@ -86,12 +88,12 @@ public class BD_base : MonoBehaviour
         }
         catch
         {
-            Debug.Log("РћС€РёР±РєР°");
+            Debug.Log("Ошибка");
         }
         return 0;
     }
 
-    public string role_usr_id(int id)//Р РѕР»СЊ
+    public string role_usr_id(int id)//Роль
     {
         try
         {
@@ -107,13 +109,13 @@ public class BD_base : MonoBehaviour
         }
         catch
         {
-            Debug.Log("РћС€РёР±РєР°");
+            Debug.Log("Ошибка");
         }
         return null;
     }
 
 
-    public void registration_user(string login,string password)//Р’С…РѕРґ
+    public void registration_user(string login,string password)//Вход
     {
         try
         {
@@ -128,11 +130,11 @@ public class BD_base : MonoBehaviour
             cmd.ExecuteNonQuery();
             conn.Close();
 
-            Debug.Log("РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ");
+            Debug.Log("Пользователь зарегистрирован");
         }
         catch
         {
-            Debug.Log("РћС€РёР±РєР° РІС…РѕРґР°");
+            Debug.Log("Ошибка входа");
         }
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
+using MySql.Data.MySqlClient;
 
 public class Login_view : MonoBehaviour
 {
@@ -12,11 +13,12 @@ public class Login_view : MonoBehaviour
     [SerializeField] GameObject _auth;
     [SerializeField] GameObject _admin;
     [SerializeField] GameObject _student;
-
-    BD_base base1 = new BD_base();
+    
+    
 
     public void btn_click_login()
     {
+        BD_base base1 = new BD_base();
         var login_str = _login.text;
         var password_str = _password.text;        
         var salt = new byte[] { 0x000, 0x001, 0x002, 0x003, 0x004, 0x005, 0x006, 0x007, 0x008, 0x009, 0x0010, 0x0011, 0x0012, 0x0013, 0x0014, 0x0015 };

@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using ColorUtility = UnityEngine.ColorUtility;
 
 public class Block_line_draw : MonoBehaviour, IPointerDownHandler
 {
@@ -18,14 +19,18 @@ public class Block_line_draw : MonoBehaviour, IPointerDownHandler
 
         if (Singleton_points._pos_points.Count == 2)
         {
+            
+            
             lineRenderer = new GameObject("Line").AddComponent<LineRenderer>();
-            lineRenderer.startColor = Color.black;
-            lineRenderer.endColor = Color.black;
-            lineRenderer.startWidth = .1f;
-            lineRenderer.endWidth = .1f;
+            Material lineMaterial = lineRenderer.material;
+            lineMaterial.SetColor("_Color", Color.black);
+            lineRenderer.material = lineMaterial;
+            lineRenderer.startWidth = .05f;
+            lineRenderer.endWidth = .05f;
             lineRenderer.positionCount = 2;
             lineRenderer.useWorldSpace = true;
-            lineRenderer.material.color = Color.black;
+            //lineRenderer.material.color = Color.black;
+            //lineRenderer.material.SetColor("_Color", Color.black);
 
             if ((Singleton_points._obj_blocks[1].transform.position.x < Singleton_points._obj_blocks[0].transform.position.x) || (Singleton_points._obj_blocks[0].transform.position.x < Singleton_points._obj_blocks[1].transform.position.x))
             {                
