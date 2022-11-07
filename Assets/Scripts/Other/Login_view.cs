@@ -13,9 +13,6 @@ public class Login_view : MonoBehaviour
     [SerializeField] GameObject _auth;
     [SerializeField] GameObject _admin;
     [SerializeField] GameObject _student;
-    
-    
-
     public void btn_click_login()
     {
         BD_base base1 = new BD_base();

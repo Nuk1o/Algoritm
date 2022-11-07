@@ -1,9 +1,9 @@
 using System.IO;
 using System.Security.Cryptography;
-public static class Pass_encryption //���������� ������
+public static class Pass_encryption
 {
-    private const int KEYSIZE = 256;//������ �����
-    public static byte[] Encrypt(byte[] data, string password, byte[] salt, byte[] iv)//����������
+    private const int KEYSIZE = 256;
+    public static byte[] Encrypt(byte[] data, string password, byte[] salt, byte[] iv)
     {
         using var rij = new RijndaelManaged()
         {
